@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Anatomy of a CSS Rule</title>
+<style>
+	p{
+		color: blue;
+		font-size: 20px;
+		width: 1500px;
+	}
+
+	h1{
+		color: red;
+		font-size: 36px;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<h1>Anatomy of CSS Rule</h1>
+	<h2>Subheading 1</h2>
+	<p>CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed. And while styling an entire web page could be a pretty complex process, defining a simple CSS rule is fairly straightforward. So, let's go over that. A CSS rule consists of selector, in this case it's a p, the paragraph tag, which is basically saying that whatever rules I'm about to give should apply to the content of every single paragraph tag in the entire HTML page. The selector is followed by open and close curly braces. Inside of those braces, we have CSS declaration. And it consist of two parts, the property and the value. Property name is something that's predefined by CSS specification, and for every property there is a set number of pre-defined values. Or in the case of numerical values, set number of type of numerical values that is pre-defined. Now, every property in the value is separated by a colon, and is terminated by a semicolon. Now, technically speaking, a semicolon is not a requirement, but it's a best practice, and you should always, always use it.</p>
+	<h2>Sub heading 2</h2>
+	<p>A CSS rule can consist of several declarations. For example, in this case we're specifying the contents of the paragraph tags in our HTML page should have a particular color, a particular font size, and also be a particular width, meaning the paragraph itself, the content, should take up 200 pixels. Now, the collection of these CSS rules is what's called a style sheet. Now, technically speaking, you don't have to have anything in the style sheet to be called a style sheet. An empty style sheet, it technically is a style sheet as well. But it's just not a very useful one. So, obviously, you would have at least one CSS rule in there. But, typically, you have way more than just one.</p>
+</body>
+</html>
