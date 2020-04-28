@@ -1,0 +1,42 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Child Selector</title>
+<style>
+
+/* any article element which is a direct child of a section element,i.e., any article element whose immediate parent is a section element. */
+section > article {
+  color: green;
+  font-size: 24px;
+}
+
+/* any h2 element which is a direct child of a section element,i.e., any h2 element whose immediate parent is a section element. */
+section > h2 {
+  color: green;
+}
+
+/* In the first rule we want to target any article element which is a direct child of a section element. In other words any article whose immediate parent is a section element. Well we've done this before in examples, so that section with the right angle bracket to say immediate child and it's immediate child should be, article, so we save that and refresh the browser. We see that the styling is only applied to the article that is direct child of the section but the article that is not direct child of a section who's sitting inside the DIV is unaffected. */
+
+/* The next target is, any h2 element which is a direct child of a section element. In other words, any h2 element whose immediate parent is a section element. So again, the idea is similar It's section and it's direct child should be h2. So any h2 that is a direct child of a section element. Let's save that and refresh. And since subheading one is a direct child of the section element. That is the only element that gets our styling rule applied to it. */ 
+
+</style>
+</head>
+<body>
+<h1>Child Selector</h1>
+<section>
+  <h2>Subheading 1</h2>
+  <div>
+    <article>ARTICLE which inside DIV, which is inside SECTION</article>
+  </div>
+</section>
+
+<section>
+  <article>ARTICLE as a direct child of the SECTION element.</article>
+</section>
+
+<h2>Subheading 2</h2>
+
+</body>
+</html>
