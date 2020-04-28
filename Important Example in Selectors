@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Important Example in Selectors</title>
+<style>
+
+
+/* div > p {
+  color: blue;
+}
+I am feeling high changes to blue color */
+
+
+/* div.p {
+  color: blue;
+}
+No change in the doc */
+
+
+/* div p {
+  color: blue;
+}
+I am feeling high changes to blue color */
+
+
+/* .makeMeBlue > p {
+  color: blue;
+}
+Both the last <p> tag sentences turns to blue. */
+
+
+/* div.makeMeBlue p {
+  color: blue;
+}
+They are crying changes to blue color */
+
+
+/* div > div > p {
+  color: blue;
+}
+They are crying changes to blue color */
+
+
+/* div p {
+  color: blue;
+}
+I am feeling high and Both the last <p> tag sentences turns to blue. */
+
+
+</style>
+</head>
+<body>
+
+<div>
+  <p>I am feeling high</p>
+</div>
+<section>
+  <p>I just want to be left alone!</p>
+</section>
+
+
+
+<div>
+  <div>
+    <div class="makeMeBlue">
+      <p>They are crying</p>
+    </div>
+  </div>
+  <section class="makeMeBlue">
+    <p>They are crazy people!</p>
+  </section>
+</div>
+
+</body>
+</html>
