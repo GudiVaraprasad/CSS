@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 5;
+  padding: 5;
+}
+
+body {
+  background-color: gray;
+}
+
+#box {
+  background-color: blue;
+  padding: 10px;
+  border: 5px solid black;
+  width: 1000px;
+  height: 500px;
+  margin-top: 50px;
+  overflow: auto;
+}
+#content {
+  background-color: #90EE90; /* green */
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content"> All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. 
+  <p> Content - The content of the box, where text and images appear </p>
+  <p> Padding - Clears an area around the content. The padding is transparent </p>
+  <p> Border - A border that goes around the padding and content </p>
+  <p> Margin - Clears an area outside the border. The margin is transparent </p>
+  <p> The box model allows us to add a border around elements, and to define space between elements. </p>
+  <p> In order to set the width and height of an element correctly in all browsers, you need to know how the box model works. </p>
+  <p> Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins. </p>
+  <p> The total width of an element should be calculated like this: </p>
+  <p> Total element width = width + left padding + right padding + left border + right border + left margin + right margin. </p>
+  <p> The total height of an element should be calculated like this: </p>
+  <p> Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin </p>
+  </div>
+</div>
+</body>
+</html>
