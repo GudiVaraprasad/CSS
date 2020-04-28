@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inheritance in CSS</title>
+<style>
+body {
+  color: red;
+  text-align: center;
+  font-family: Helvetica;
+}
+p {
+  color: blue;
+}
+</style>
+</head>
+<body>
+<h1>Cascade of CSS Example</h1>
+<h2>Subheading 1</h2>
+<p>Inheritence allows us to write more global styles on parent elements and then "fine-tune" the styles for some of the child elements as needed. Such approach makes writing CSS very efficient.</p>
+
+<h2 style="color: green;">Subheading 2</h2>
+<p>The next concept we're going to take a look at is inheritance. And it's a pretty simple concept. The basic idea is that you have the document object model tree. And if you specify some CSS property on some element, all the children and grandchildren and so on and so on of that element will also inherit that property without you having to specify the property for each and every element. So for example, if I specify one property on the body tag, every element that is a child of a body tag, or even a child of a child of a body tag and so on, will inherit that property. Similarly, if I specify a property on some element within my HTML page, every child and grandchild and so on of that element will also inherit that property. But obviously, no parents of that element will inherit that property and therefore will be completely unaffected by it. So let's take a look at what inheritance looks like in code. While inheritance in CSS is a pretty simple concept to understand, it happens to be a very powerful technique as well. It allows me to specify one rule and have all the children of the target element inherit that rule.</p>
+
+</body>
+</html>
